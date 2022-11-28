@@ -23,8 +23,11 @@ header{
 
 .nav-links, .navbar{
   width: 100%;
-  display: flex;
   justify-content: space-around;
+}
+
+.navbar{
+  display: flex;
 }
 
 .nav-links{
@@ -46,4 +49,75 @@ header{
   font-size: 1.25em;
   text-align: center;
   padding: 15px;
+}
+
+/* hamburger button */
+ul .hamburger-item a{
+  color: #ffeeb3;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px 12px;
+}
+
+#hamburger-container label:hover, .hamburger-item:hover{
+  background-color: #817f75 !important;
+}
+
+#hamburger + ul .hamburger-item{
+  display: none;
+}
+
+#hamburger, #hamburger-container label{
+  position: absolute;
+  color: #ffeeb3;
+  right: 0;
+  z-index: 997;
+}
+
+#hamburger-container label{
+  top: 0;
+  font-size: 2rem;
+  width: 100vw;
+  text-align: center;
+  background-color: #051014;
+}
+
+#hamburger{
+  opacity: 0;
+}
+
+#hamburger:checked + ul .hamburger-item{
+  display: block;
+  text-align: left;
+  background-color: var(--secondary-color);
+  position: relative;
+  padding: 15px;
+  z-index: 997;
+  width: 100vw;
+}
+
+#hamburger-background{
+  position: absolute;
+  right: 0;
+  top: 45px;
+  background-color: #051014;
+}
+
+.top-navbar-item-list:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  z-index: 999;
+}
+
+.dropdown-content a{
+  display: block;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  padding: 8px 15px;
+  z-index: 998;
 }

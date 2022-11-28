@@ -9,9 +9,9 @@ function App() {
         className="bg-[url(./images/cross-bg-sm.jpg)] bg-contain md:bg-[url(./images/cross-bg-lg.jpg)] md:bg-cover"
       >
         <section className="top-header">
-          <div className="md:flex justify-center m-5 hidden">
+          <div className="flex justify-center m-5">
             <nav className="navbar">
-              <ul className="nav-links">
+              <ul className="hidden nav-links md:flex">
                 <li>
                   <a href="/#">ホームパージ</a>
                 </li>
@@ -28,10 +28,31 @@ function App() {
                   <a href="/#">連絡先</a>
                 </li>
               </ul>
+              <div id="hamburger-container" className="block md:hidden">
+                <label htmlFor="hamburger">&#9776;</label>
+                <input type="checkbox" id="hamburger" />
+                <ul id="hamburger-background">
+                  <li className="hamburger-item">
+                    <a href="/#">ホームパージ</a>
+                  </li>
+                  <li className="hamburger-item">
+                    <a href="/#">教会の内容</a>
+                  </li>
+                  <li className="hamburger-item">
+                    <a href="/#">勉強ガイド</a>
+                  </li>
+                  <li className="hamburger-item">
+                    <a href="/#">エベントの参加</a>
+                  </li>
+                  <li className="hamburger-item">
+                    <a href="/#">連絡先</a>
+                  </li>
+                </ul>
+              </div>
             </nav>
           </div>
           <div className="title-group m-5">
-            <p className="title text-2xl md:text-5xl">
+            <p className="title text-2xl md:text-5xl pt-6">
               新約聖書クリスチャン<span className="break-words">教会日本</span>
             </p>
           </div>
