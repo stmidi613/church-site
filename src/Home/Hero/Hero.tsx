@@ -16,7 +16,7 @@ const Hero = () => {
                   <a href="/#">ホームパージ</a>
                 </li>
                 <li>
-                  <a href="/#">教会の内容</a>
+                  <a href="/#">教会の情報</a>
                 </li>
                 <li>
                   <a href="/#">勉強ガイド</a>
@@ -37,7 +37,7 @@ const Hero = () => {
                     <a href="/#">ホームパージ</a>
                   </li>
                   <li className="hamburger-item">
-                    <a href="/#">教会の内容</a>
+                    <a href="/#">教会の情報</a>
                   </li>
                   <li className="hamburger-item">
                     <a href="/#">勉強ガイド</a>

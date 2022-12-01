@@ -22,14 +22,14 @@ const NextEvents = () => {
 
   const BIBLEVERSE: string[] = [
     '"For God so loved the world, that he gave his only begotton Son, that whosoever believeth in Him should not perish but have everlasting life."',
-    "John 3:16",
+    "ヨハネ 3:16",
   ];
 
   return (
     <>
       <section
         aria-labelledby="Next-events"
-        className="bg-[#f7f6f2] text-center lg:pb-6"
+        className="bg-[#f7f6f2] text-center p-6"
       >
         <h2 className="text-3xl pt-8 lg:pb-4">次のエベント</h2>
         <div className="lg:flex w-full">
