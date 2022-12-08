@@ -21,7 +21,7 @@ const NextEvents = () => {
   ];
 
   const BIBLEVERSE: string[] = [
-    '"For God so loved the world, that he gave his only begotton Son, that whosoever believeth in Him should not perish but have everlasting life."',
+    '"神は, その独り子をお与えになったほどに、世を愛された。独り子を信じる者が一人も滅びないで、永遠の命を得るためである。"',
     "ヨハネ 3:16",
   ];
 
