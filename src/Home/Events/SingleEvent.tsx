@@ -13,7 +13,7 @@ const SingleEvent: React.FC<Props> = ({ date, name, fullDate }) => {
       <h3 className="font-bold text-2xl pb-2">{name}</h3>
       <h4>{fullDate}</h4>
       <div className="p-8">
-        <a href="/#">情報 &gt;&gt;</a>
+        <a className="hover:text-gray hover:bg-teal p-2" href="/#">情報 &gt;&gt;</a>
       </div>
     </div>
   );
