@@ -43,7 +43,7 @@ header{
     background: #051014;
     transition: ease-in-out .5s;
   }
-  
+
   .nav-links li a{
     font-size: 1.25em;
     text-align: center;
@@ -52,7 +52,7 @@ header{
   
   /* hamburger button */
   ul .hamburger-item a{
-    color: #ffeeb3;
+    color: #f1c17a;
     text-decoration: none;
     font-size: 18px;
     padding: 15px;
@@ -62,7 +62,7 @@ header{
 
   #hamburger-container label:hover, .hamburger-item:hover, ul .hamburger-item a:hover{
     background-color: #817f75 !important;
-    color: #051014;
+    color: #ffeeb3;
   }
   
   #hamburger + ul .hamburger-item{
@@ -71,7 +71,7 @@ header{
   
   #hamburger, #hamburger-container label{
     position: absolute;
-    color: #ffeeb3;
+    color: #f1c17a;
     right: 0;
     z-index: 997;
   }

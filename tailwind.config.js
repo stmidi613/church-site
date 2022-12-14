@@ -9,7 +9,8 @@ module.exports = {
         'gold': '#ffeeb3',
         'black': '#051014',
         'gray': '#817f75',
-        'teal': '#92dce5'
+        'teal': '#92dce5',
+        'darkgold': '#f1c17a'
       }
     },
   },

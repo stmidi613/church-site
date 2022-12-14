@@ -6,6 +6,7 @@ import Features from "./Home/Features/Features";
 import PrayerRequests from "./Home/PrayerRequests/PrayerRequests";
 
 import "./App.css";
+import Footer from "./Home/Footer/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <NextEvents />
       <Features />
       <PrayerRequests />
+      <Footer />
     </Fragment>
   );
 }
