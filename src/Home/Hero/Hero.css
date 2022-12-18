@@ -5,8 +5,8 @@ header{
     display: grid;
   }
   
-  .title, .nav-links li a{
-    color: #ffeeb3;
+  .nav-links li a{
+    color: #f1c17a;
   }
   
   .log-in-group, .title-group{
@@ -14,7 +14,7 @@ header{
     place-content: center;
   }
   
-  .log-in-group p{
+  .title, .log-in-group p{
     text-align: center;
     color: #ffeeb3;
   }
@@ -34,20 +34,21 @@ header{
   }
   
   .nav-links li{
-    padding: 4px;
+    padding: 5px;
     list-style-type: none;
     border-radius: 4%;
   }
   
-  .nav-links li:hover{
-    background: #051014;
+  .nav-links li a:hover{
+    background: #817f75;
     transition: ease-in-out .5s;
+    color: #ffeeb3;
   }
 
   .nav-links li a{
     font-size: 1.25em;
     text-align: center;
-    padding: 15px;
+    padding: 12px;
   }
   
   /* hamburger button */

@@ -9,9 +9,9 @@ const Hero = () => {
         className="min-h-[300px] h-[50vh] md:h-[80vh] bg-[url(./images/cross-bg-sm.jpg)] bg-cover md:bg-[url(./images/cross-bg-lg.jpg)] md:bg-cover"
       >
         <section className="top-header">
-          <div className="flex justify-center m-5">
+          <div className="flex justify-center">
             {/* regular navbar */}
-            <nav className="navbar">
+            <nav className="navbar bg-black fixed z-10 p-1">
               <ul className="hidden nav-links md:flex">
                 <li>
                   <a href="/#">ホームパージ</a>
@@ -30,7 +30,7 @@ const Hero = () => {
                 </li>
               </ul>
               {/* collapsed navbar */}
-              <div id="hamburger-container" className="block md:hidden">
+              <div id="hamburger-container" className="md:hidden">
                 <label htmlFor="hamburger">&#9776;</label>
                 <input type="checkbox" id="hamburger" />
                 <ul id="hamburger-background">
@@ -53,7 +53,7 @@ const Hero = () => {
               </div>
             </nav>
           </div>
-          <div className="title-group m-5">
+          <div className="title-group p-8">
             <h1 className="title text-2xl md:text-5xl pt-6">
               新約聖書クリスチャン<span className="break-all">教会日本</span>
             </h1>
