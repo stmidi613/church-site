@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     <>
-      <section
+      <footer
         className="grid place-content-center bg-black text-darkgold text-left"
         aria-labelledby="footer"
       >
@@ -39,7 +39,7 @@ const Footer = () => {
             />
           ))}
         </div>
-      </section>
+      </footer>
     </>
   );
 };
