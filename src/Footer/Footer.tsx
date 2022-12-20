@@ -1,8 +1,8 @@
 import React from "react";
 
-import twitter from "../../images/twitter.png";
-import linkedIn from "../../images/LinkedIn.png";
-import email from "../../images/Email.png";
+import twitter from "../images/twitter.png";
+import linkedIn from "../images/LinkedIn.png";
+import email from "../images/Email.png";
 
 const Footer = () => {
   const ICONS: string[] = [twitter, linkedIn, email];

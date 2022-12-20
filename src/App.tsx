@@ -4,9 +4,9 @@ import Hero from "./Home/Hero/Hero";
 import NextEvents from "./Home/Events/NextEvents";
 import Features from "./Home/Features/Features";
 import PrayerRequests from "./Home/PrayerRequests/PrayerRequests";
+import Footer from "./Footer/Footer";
 
 import "./App.css";
-import Footer from "./Home/Footer/Footer";
 
 function App() {
   return (
