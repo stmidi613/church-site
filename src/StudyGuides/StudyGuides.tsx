@@ -3,6 +3,8 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 
+import studying from "../images/studying.jpg";
+
 import "../Home/Hero/Hero.css";
 
 const StudyGuides = () => {
@@ -19,6 +21,8 @@ const StudyGuides = () => {
           </div>
         </div>
       </section>
+      <img src={studying} alt="" />
+      <div className="w-full h-80 bg-cover studyguide"></div>
       <Footer />
     </>
   );
