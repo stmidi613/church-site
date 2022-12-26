@@ -14,7 +14,7 @@ const Header: React.FC<Props> = ({backgroundImage, title, paragraph}) => {
       <div className="grid place-content-center h-full w-full bg-gray/40">
         <div className="text-center">
           <h2 className="text-5xl text-white pb-4">{title}</h2>
-          <p className="text-white bg-gray/50 px-8">{paragraph}</p>
+          <p className="text-white bg-gray/50 px-8 max-w-lg">{paragraph}</p>
         </div>
       </div>
     </section>
