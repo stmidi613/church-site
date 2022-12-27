@@ -2,10 +2,11 @@ import React from "react";
 
 import Navbar from "../Navbar/Navbar";
 import Header from "../Components/Header";
+import Details from "../Components/Details";
+import MainContent from "../Components/MainContent";
 import Footer from "../Footer/Footer";
 
 import "../Home/Hero/Hero.css";
-import Details from "../Components/Details";
 
 const StudyGuides = () => {
   
@@ -25,6 +26,7 @@ const StudyGuides = () => {
         paragraph={paragraph}
       />
       <Details detailsTitle={detailsTitle} detailsParagraph={detailsParagraph} />
+      <MainContent />
       <Footer />
     </>
   );
