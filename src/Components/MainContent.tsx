@@ -1,6 +1,7 @@
 import React from "react";
 
 import Details from "./Details";
+import Button from "./Button";
 
 const MainContent = () => {
   return (
@@ -11,7 +12,7 @@ const MainContent = () => {
         detailsTitle="聖書の学び会の概要"
       />
       <div className="bg-lightgray text-gray grid place-content-center">
-        <button className="">勉強サポート</button>
+        <Button buttonText="勉強サポート" />
       </div>
     </>
   );

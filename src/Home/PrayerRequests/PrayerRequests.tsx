@@ -1,5 +1,7 @@
 import React from "react";
 
+import Button from "../../Components/Button";
+
 const Participate = () => {
   return (
     <>
@@ -16,9 +18,7 @@ const Participate = () => {
             <p className="text-sm md:text-xl lg:text-2xl pt-2">
               エペソ人への手紙6章18節
             </p>
-            <button className="transition hover:ease-in-out duration-500 text-xl md:text-xl lg:text-2xl mt-2 md:mt-4 p-3 text-darkgold bg-black rounded border-[1px] hover:bg-gray hover:text-gold">
-              祈りの求め
-            </button>
+            <Button buttonText="祈りの求め" />
           </div>
         </div>
       </section>
