@@ -17,7 +17,7 @@ const MainContent = () => {
           />
         </div>
         <Details
-          detailsParagraph="ぜひ自由に聖書の学び会の概要をダウンロードすることができます。勉強はもっと理解しやすくて、面白くなります。勉強ガードは聖書が分かることを手伝います。"
+          detailsParagraph="ぜひ自由に聖書の学び会の概要をダウンロードすることができます。勉強はもっと理解しやすくて、面白くなります。勉強ガードは聖書が分かることを手伝います。「聖書サポート」というボタンをクリックしてください。"
           detailsTitle="聖書の学び会の概要"
         />
         <div className="bg-lightgray text-gray grid place-content-center pb-8">
