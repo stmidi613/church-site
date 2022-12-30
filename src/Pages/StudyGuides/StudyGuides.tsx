@@ -1,12 +1,12 @@
 import React from "react";
 
-import Navbar from "../Navbar/Navbar";
-import Header from "../Components/Header";
-import Details from "../Components/Details";
-import MainContent from "../Components/MainContent";
-import Footer from "../Footer/Footer";
+import Navbar from "../../Components/Navbar/Navbar";
+import Header from "../../Components/Header";
+import Details from "../../Components/Details";
+import MainContent from "../../Components/MainContent";
+import Footer from "../../Components/Footer/Footer";
 
-import "../Home/Hero/Hero.css";
+import "../../Pages/Home/Hero/Hero.css";
 
 const StudyGuides = () => {
   

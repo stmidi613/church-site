@@ -1,6 +1,6 @@
 import React from "react";
 
-import Navbar from "../../Navbar/Navbar";
+import Navbar from "../../../Components/Navbar/Navbar";
 
 import "./Hero.css";
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import Footer from "../Footer/Footer";
+import Footer from "../../Components/Footer/Footer";
 import NextEvents from "./Events/NextEvents";
 import Features from "./Features/Features";
 import PrayerRequests from "./PrayerRequests/PrayerRequests";
