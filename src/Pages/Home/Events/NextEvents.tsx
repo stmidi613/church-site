@@ -2,10 +2,12 @@ import React, { Fragment } from "react";
 import SingleEvent from "./SingleEvent";
 
 const NextEvents = () => {
-  const EVENTS: [
-    { eventId: number; name: string; date: string; fullDate: string },
-    { eventId: number; name: string; date: string; fullDate: string }
-  ] = [
+  const EVENTS: {
+    eventId: number;
+    name: string;
+    date: string;
+    fullDate: string;
+  }[] = [
     {
       eventId: 1,
       name: "聖書の学び会",
