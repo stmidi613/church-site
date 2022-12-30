@@ -13,6 +13,7 @@ module.exports = {
       },
       backgroundImage: {
         study: "url('./images/studying.jpg')",
+        studyhelp: "url('./images/studyhelp.jpg')"
       },
     },
   },
