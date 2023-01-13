@@ -13,6 +13,7 @@ const SingleTabContent: React.FC<Props> = ({ tabNumber, number, title }) => {
         <div className="tabcontent">
           <h3>{title}</h3>
           <p>Title of outlines</p>
+          <a href={require('../../Pages/BibleSupport/PDF/test.pdf')} target="_blank">Click to download</a> 
         </div>
       ) : (
         ""
