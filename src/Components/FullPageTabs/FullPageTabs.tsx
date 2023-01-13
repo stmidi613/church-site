@@ -22,6 +22,7 @@ const FullPageTabs = () => {
               key={tab.number}
               tabName={tab.tabName}
               number={tab.number}
+              tabNumber={tabNumber}
               setTabNumber={setTabNumber}
             />
           ))}
