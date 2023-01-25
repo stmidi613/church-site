@@ -1,6 +1,8 @@
 import React from "react";
 
-import "./Navbar.css"
+import { Link } from "react-router-dom";
+
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
@@ -11,19 +13,19 @@ const Navbar = () => {
         <nav className="navbar bg-black fixed z-10 p-1">
           <ul className="hidden nav-links md:flex">
             <li>
-              <a href="/#">ホームパージ</a>
+              <Link to="/">ホームパージ</Link>
             </li>
             <li>
-              <a href="/#">教会の情報</a>
+              <Link to="/ChurchInfo">教会の情報</Link>
             </li>
             <li>
-              <a href="/#">勉強ガイド</a>
+              <Link to="/StudyGuides">勉強ガイド</Link>
             </li>
             <li>
-              <a href="/#">エベントの参加</a>
+              <Link to="/Events">エベントの参加</Link>
             </li>
             <li>
-              <a href="/#">連絡先</a>
+              <Link to="/ContactUs">連絡先</Link>
             </li>
           </ul>
           {/* collapsed navbar */}
@@ -32,19 +34,19 @@ const Navbar = () => {
             <input type="checkbox" id="hamburger" />
             <ul id="hamburger-background">
               <li className="hamburger-item">
-                <a href="/#">ホームパージ</a>
+                <Link to="/">ホームパージ</Link>
               </li>
               <li className="hamburger-item">
-                <a href="/#">教会の情報</a>
+                <Link to="/ChurchInfo">教会の情報</Link>
               </li>
               <li className="hamburger-item">
-                <a href="/#">勉強ガイド</a>
+                <Link to="/StudyGuides">勉強ガイド</Link>
               </li>
               <li className="hamburger-item">
-                <a href="/#">エベントの参加</a>
+                <Link to="/Events">エベントの参加</Link>
               </li>
               <li className="hamburger-item">
-                <a href="/#">連絡先</a>
+                <Link to="/ContactUs">連絡先</Link>
               </li>
             </ul>
           </div>

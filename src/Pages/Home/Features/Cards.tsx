@@ -2,9 +2,9 @@ import React from "react";
 
 import SingleCard from "./SingleCard";
 
-import cross from "../../images/cross-bg-sm.jpg";
-import Bible from "../../images/Bible.jpg";
-import contactUs from "../../images/contact-us.jpg";
+import cross from "../../../images/cross-bg-sm.jpg";
+import Bible from "../../../images/Bible.jpg";
+import contactUs from "../../../images/contact-us.jpg";
 
 const Cards = () => {
   const CARDS: [

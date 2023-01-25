@@ -5,6 +5,8 @@ import Button from "./Button";
 
 import sunBible from "../images/bible.png";
 
+import { Link } from "react-router-dom";
+
 const MainContent = () => {
   return (
     <>
@@ -21,7 +23,9 @@ const MainContent = () => {
           detailsTitle="聖書の学び会の概要"
         />
         <div className="bg-lightgray text-gray grid place-content-center pb-8">
-          <Button buttonText="聖書サポート" />
+          <Link to="BibleSupport">
+            <Button buttonText="聖書サポート" />
+          </Link>
         </div>
       </section>
     </>
