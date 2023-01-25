@@ -7,13 +7,18 @@ interface Props {
 }
 
 const SingleTabContent: React.FC<Props> = ({ tabNumber, number, title }) => {
+  const outlines: {id: number; outlineName: string; link: string}[] = [{id: 1, outlineName: "Report", link: require("../../Pages/BibleSupport/PDF/test.pdf")}]
   return (
     <>
-      {tabNumber == number ? (
+      {tabNumber === number ? (
         <div className="tabcontent">
-          <h3>{title}</h3>
-          <p>Title of outlines</p>
-          <a href={require('../../Pages/BibleSupport/PDF/test.pdf')} target="_blank">Click to download</a> 
+          <h3 className="text-center">{title}</h3>
+          {outlines.map(outline =>
+          <>
+          <p>{outline.id + outline.outlineName}</p>
+          <a href={outline.link} target="_blank" rel="noreferrer">Click here</a> 
+          </> 
+            )}
         </div>
       ) : (
         ""

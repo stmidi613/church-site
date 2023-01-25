@@ -15,7 +15,7 @@ const SingleTab: React.FC<Props> = ({
 }) => {
   return (
     <>
-      <button className={tabNumber == number ? "tablink tablink-active" : "tablink"} onClick={() => setTabNumber(number)}>
+      <button className={tabNumber === number ? "tablink tablink-active" : "tablink"} onClick={() => setTabNumber(number)}>
         {tabName}
       </button>
     </>

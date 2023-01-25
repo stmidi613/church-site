@@ -20,5 +20,6 @@
 
   .tabcontent {
     background-color: #f5f5f5;
-    padding: 100px 20px;
+    min-height: 300px;
+    padding: 25px 20px;
   }
