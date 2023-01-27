@@ -16,7 +16,7 @@ const Navbar = () => {
               <Link to="/">ホームパージ</Link>
             </li>
             <li>
-              <Link to="/ChurchInfo">教会の情報</Link>
+              <Link to="/AboutUs">教会の情報</Link>
             </li>
             <li>
               <Link to="/StudyGuides">勉強ガイド</Link>
@@ -37,7 +37,7 @@ const Navbar = () => {
                 <Link to="/">ホームパージ</Link>
               </li>
               <li className="hamburger-item">
-                <Link to="/ChurchInfo">教会の情報</Link>
+                <Link to="/AboutUs">教会の情報</Link>
               </li>
               <li className="hamburger-item">
                 <Link to="/StudyGuides">勉強ガイド</Link>

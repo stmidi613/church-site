@@ -14,7 +14,7 @@ const Hero = () => {
         <Navbar />
         <div className="title-group p-8">
           <h1 className="title text-2xl md:text-5xl">
-            新約聖書クリスチャン<span className="break-all">教会日本</span>
+            新約聖書クリスチャン教会
           </h1>
         </div>
       </section>
