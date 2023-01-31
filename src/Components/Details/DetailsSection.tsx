@@ -3,37 +3,36 @@ import React from "react";
 import Details from "./Details";
 
 interface Props {
-  detailsTitle: string;
-  detailsTitle2: string;
-  detailsTitle3: string;
-  detailsParagraph: string;
-  detailsParagraph2: string;
-  detailsParagraph3: string;
+  details: {
+    detailsTitle: string;
+    detailsTitle2: string;
+    detailsTitle3: string;
+    detailsParagraph: string;
+    detailsParagraph2: string;
+    detailsParagraph3: string;
+  }[];
 }
 
-const DetailsSection: React.FC<Props> = ({
-  detailsTitle,
-  detailsTitle2,
-  detailsTitle3,
-  detailsParagraph,
-  detailsParagraph2,
-  detailsParagraph3,
-}) => {
+const DetailsSection: React.FC<Props> = ({ details }) => {
   return (
     <>
       <section className="lg:flex">
-        <Details
-          detailsTitle={detailsTitle}
-          detailsParagraph={detailsParagraph}
-        />
-        <Details
-          detailsTitle={detailsTitle2}
-          detailsParagraph={detailsParagraph2}
-        />
-        <Details
-          detailsTitle={detailsTitle3}
-          detailsParagraph={detailsParagraph3}
-        />
+        {details.map((detail) => (
+          <>
+            <Details
+              detailsTitle={detail.detailsTitle}
+              detailsParagraph={detail.detailsParagraph}
+            />
+            <Details
+              detailsTitle={detail.detailsTitle2}
+              detailsParagraph={detail.detailsParagraph2}
+            />
+            <Details
+              detailsTitle={detail.detailsTitle3}
+              detailsParagraph={detail.detailsParagraph3}
+            />
+          </>
+        ))}
       </section>
     </>
   );
