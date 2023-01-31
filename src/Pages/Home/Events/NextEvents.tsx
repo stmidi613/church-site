@@ -1,5 +1,7 @@
 import React, { Fragment } from "react";
+
 import SingleEvent from "./SingleEvent";
+import BibleVerse from "../../../Components/BibleVerse";
 
 const NextEvents = () => {
   const EVENTS: {
@@ -22,7 +24,7 @@ const NextEvents = () => {
     },
   ];
 
-  const BIBLEVERSE: string[] = [
+  const Verse: string[] = [
     '"神は, その独り子をお与えになったほどに、世を愛された。独り子を信じる者が一人も滅びないで、永遠の命を得るためである。"',
     "ヨハネ 3:16",
   ];
@@ -46,12 +48,7 @@ const NextEvents = () => {
               <hr className="lg:hidden border-t-2 border-black mx-[20%] opacity-50"></hr>
             </Fragment>
           ))}
-          <div className="grid place-content-center lg:w-1/3">
-            <blockquote className="max-w-[500px] italic opacity-70 text-xl m-8">
-              {BIBLEVERSE[0]}
-            </blockquote>
-            <p className="font-bold pb-8">{BIBLEVERSE[1]}</p>
-          </div>
+          <BibleVerse verse={Verse[1]} quote={Verse[0]} home={true} />
         </div>
       </section>
     </>

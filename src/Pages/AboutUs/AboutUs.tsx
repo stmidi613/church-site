@@ -3,7 +3,8 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import Header from "../../Components/Header";
 import DetailsSection from "../../Components/Details/DetailsSection";
-import MainContent from "../../Components/MainContent";
+import MainContent from "../../Components/MainContent/MainContent";
+import AboutUsImage from "../../Components/MainContent/AboutUsImage";
 import Footer from "../../Components/Footer/Footer";
 
 const AboutUs = () => {
@@ -34,6 +35,9 @@ const AboutUs = () => {
     },
   ];
 
+  const MCdetailsTitle: string = "人生の幸を見つける";
+  const MCdetailsParagraph: string = "神様との関係を持つ時、他人との関係はどんどん良くなります。人生の目的や自分の存在の理由はだんだろうかなと思っている方に答えがあります。満足や平和を探したら、手伝いの手があります。";
+
   return (
     <>
       <Navbar />
@@ -43,7 +47,14 @@ const AboutUs = () => {
         paragraph={paragraph}
       />
       <DetailsSection details={details} />
-      <MainContent />
+      <MainContent
+        button={false}
+        image={<AboutUsImage />}
+        detailsTitle={MCdetailsTitle}
+        detailsParagraph={MCdetailsParagraph}
+        quote={'"義に飢え渇いている者は幸いです。その人は満ち足りるからです。"'}
+        verse={"マタイの福音書５：６"}
+      />
       <Footer />
     </>
   );
