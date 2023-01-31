@@ -15,6 +15,7 @@ module.exports = {
         study: "url('./images/studying.jpg')",
         studyhelp: "url('./images/studyhelp.jpg')",
         earthheart: "url('./images/EarthHeart.jpg')",
+        handheart: "url('./images/PaintedHands.jpg')",
       },
     },
   },
