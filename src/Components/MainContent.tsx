@@ -1,6 +1,6 @@
 import React from "react";
 
-import Details from "./Details";
+import Details from "./Details/Details";
 import Button from "./Button";
 
 import sunBible from "../images/bible.png";

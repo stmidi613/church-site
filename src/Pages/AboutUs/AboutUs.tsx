@@ -2,7 +2,7 @@ import React from "react";
 
 import Navbar from "../../Components/Navbar/Navbar";
 import Header from "../../Components/Header";
-import Details from "../../Components/Details";
+import Details from "../../Components/Details/Details";
 import MainContent from "../../Components/MainContent";
 import Footer from "../../Components/Footer/Footer";
 
@@ -28,7 +28,7 @@ const AboutUs = () => {
         title={title}
         paragraph={paragraph}
       />
-      <div className="lg:flex">
+      <section className="lg:flex">
         <Details
           detailsTitle={detailsTitle}
           detailsParagraph={detailsParagraph}
@@ -41,7 +41,7 @@ const AboutUs = () => {
           detailsTitle={detailsTitle3}
           detailsParagraph={detailsParagraph3}
         />
-      </div>
+      </section>
       <MainContent />
       <Footer />
     </>
