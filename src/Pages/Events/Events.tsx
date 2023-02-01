@@ -4,8 +4,9 @@ import Navbar from "../../Components/Navbar/Navbar";
 import Header from "../../Components/Header";
 import Details from "../../Components/Details/Details";
 import MainContent from "../../Components/MainContent/MainContent";
-import AboutUsImage from "../../Components/MainContent/AboutUsImage";
 import Footer from "../../Components/Footer/Footer";
+
+import EventsImage from "../../images/PrayingBible.jpg"
 
 const Events = () => {
   const backgroundImage: string = "bg-handheart";
@@ -30,7 +31,7 @@ const Events = () => {
         detailsTitle={details.detailsTitle}
         detailsParagraph={details.detailsParagraph}
       />
-      <MainContent button={false} image={<AboutUsImage />} detailsTitle={"時間割"} detailsParagraph={""} quote={""} verse={""} />
+      <MainContent image={EventsImage} detailsTitle={"時間割"} detailsParagraph={"遊びに行きませんか？"} quote={"ふたりでも三人でも、わたしの名において集まる所には、わたしもその中にいるからです。"} verse={"マタイの福音書１８：２０"} />
       <Footer />
     </>
   );

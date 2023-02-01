@@ -22,7 +22,7 @@ const Navbar = () => {
               <Link to="/StudyGuides">勉強ガイド</Link>
             </li>
             <li>
-              <Link to="/Events">エベントの参加</Link>
+              <Link to="/Events">集会・エベント</Link>
             </li>
             <li>
               <Link to="/ContactUs">連絡先</Link>
@@ -43,7 +43,7 @@ const Navbar = () => {
                 <Link to="/StudyGuides">勉強ガイド</Link>
               </li>
               <li className="hamburger-item">
-                <Link to="/Events">エベントの参加</Link>
+                <Link to="/Events">集会・エベント</Link>
               </li>
               <li className="hamburger-item">
                 <Link to="/ContactUs">連絡先</Link>

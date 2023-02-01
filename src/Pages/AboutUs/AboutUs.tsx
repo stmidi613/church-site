@@ -4,8 +4,9 @@ import Navbar from "../../Components/Navbar/Navbar";
 import Header from "../../Components/Header";
 import DetailsSection from "../../Components/Details/DetailsSection";
 import MainContent from "../../Components/MainContent/MainContent";
-import AboutUsImage from "../../Components/MainContent/AboutUsImage";
 import Footer from "../../Components/Footer/Footer";
+
+import AUimage from "../../images/HandHeartSun.jpg"
 
 const AboutUs = () => {
   const backgroundImage: string = "bg-earthheart";
@@ -48,8 +49,7 @@ const AboutUs = () => {
       />
       <DetailsSection details={details} />
       <MainContent
-        button={false}
-        image={<AboutUsImage />}
+        image={AUimage}
         detailsTitle={MCdetailsTitle}
         detailsParagraph={MCdetailsParagraph}
         quote={'"義に飢え渇いている者は幸いです。その人は満ち足りるからです。"'}

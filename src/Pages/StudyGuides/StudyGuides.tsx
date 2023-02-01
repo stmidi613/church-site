@@ -4,8 +4,10 @@ import Navbar from "../../Components/Navbar/Navbar";
 import Header from "../../Components/Header";
 import Details from "../../Components/Details/Details";
 import MainContent from "../../Components/MainContent/MainContent";
-import StudyGuideMCImage from "../../Components/MainContent/StudyGuideMCImage";
+import MCButton from "../../Components/MainContent/MCButton";
 import Footer from "../../Components/Footer/Footer";
+
+import sunBible from "../../images/bible.png"
 
 import "../../Pages/Home/Hero/Hero.css";
 
@@ -41,12 +43,12 @@ const StudyGuides = () => {
         detailsParagraph={detailsParagraph}
       />
       <MainContent
-        button={true}
-        image={<StudyGuideMCImage />}
+        image={sunBible}
         detailsTitle={MCdetailsTitle}
         detailsParagraph={MCdetailsParagraph}
         quote={Verse[0]}
         verse={Verse[1]}
+        extra={<MCButton />}
       />
       <Footer />
     </>
