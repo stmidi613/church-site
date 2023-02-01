@@ -6,8 +6,8 @@ import Footer from "../../Components/Footer/Footer";
 
 const Events = () => {
 const backgroundImage: string = "bg-handheart";
-const title: string = "エベントの参加"
-const paragraph: string = "This is the events paragraph"
+const title: string = "集会・エベント"
+const paragraph: string = "神様について学んだり、友達ができたり、賛美を歌ったり、することは楽しいです。神様の臨在のなかで一緒に生きたり、笑ったり、愛したり、しましょう。"
 
   return (
     <>
