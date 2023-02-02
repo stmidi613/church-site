@@ -1,0 +1,31 @@
+form {
+    display: grid;
+    place-content: center;
+    margin: 2rem;
+}
+
+fieldset {
+    display: grid;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+input, textarea {
+    padding: 5px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    box-sizing: border-box !important;
+}
+
+textarea {
+    height: 150px;
+}
+
+input:hover, textarea:hover {
+    padding: 4px;
+    border: 2px solid black;
+    box-sizing: border-box !important;
+}

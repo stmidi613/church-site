@@ -1,7 +1,9 @@
 import React from "react";
 
-import Header from "../../Components/Header";
 import Navbar from "../../Components/Navbar/Navbar";
+import Header from "../../Components/Header";
+import Form from "../../Components/Form/Form";
+import Footer from "../../Components/Footer/Footer";
 
 const Contact = () => {
   const header: {
@@ -22,6 +24,8 @@ const Contact = () => {
         title={header.title}
         paragraph={header.paragraph}
       />
+      <Form />
+      <Footer />
     </>
   );
 };
