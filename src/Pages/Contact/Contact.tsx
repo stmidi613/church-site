@@ -25,6 +25,7 @@ const Contact = () => {
         paragraph={header.paragraph}
       />
       <Form />
+      
       <Footer />
     </>
   );
