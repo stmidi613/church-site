@@ -9,6 +9,8 @@ const Form = () => {
     message: "",
   });
   
+  const request: string = "メッセージ";
+
   const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log(formData);
@@ -40,7 +42,7 @@ const Form = () => {
               console.log(setFormData({ ...formData, email: e.target.value }))
             }
           />
-          <label htmlFor="message">メッセージ</label>
+          <label htmlFor="message">{request}</label>
           <textarea
             name="message"
             placeholder="メッセージを書いてください。"
