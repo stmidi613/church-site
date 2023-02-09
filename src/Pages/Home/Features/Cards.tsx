@@ -8,9 +8,9 @@ import contactUs from "../../../images/contact-us.jpg";
 
 const Cards = () => {
   const CARDS: [
-    { cardId: number; heading: string; paragraph: string; picture: string; alt: string; },
-    { cardId: number; heading: string; paragraph: string; picture: string; alt: string; },
-    { cardId: number; heading: string; paragraph: string; picture: string; alt: string; }
+    { cardId: number; heading: string; paragraph: string; picture: string; alt: string; link: string;},
+    { cardId: number; heading: string; paragraph: string; picture: string; alt: string; link: string;},
+    { cardId: number; heading: string; paragraph: string; picture: string; alt: string; link: string;}
   ] = [
     {
       cardId: 1,
@@ -18,23 +18,26 @@ const Cards = () => {
       paragraph:
         "新約聖書クリスチャン教会日本は大阪市にあります。現在、聖書の学び会だけ行いますが、近い未来に礼拝も行うつもりです。誰でも参加してもよろしい、みんなを歓迎したいと思います。",
       picture: `${cross}`,
-      alt: "A cross with the sun shining behind it."
+      alt: "A cross with the sun shining behind it.",
+      link: "/AboutUs"
     },
     {
       cardId: 2,
       heading: "聖書の学び会",
       paragraph:
-        "Please come and study the Bible with us.  Learn together, grow together, live together.  For those who are curious and want to know more about Christianity we have easy to understand study guides to help you understand the Christian faith and what is in the Bible.",
+        "一緒に学んだり、成長したり、生きたり、しましょう。キリスト教や聖書に興味がある方のために分かりやすい勉強ガイドがあります。聖書の内容やキリスト教の信仰が分かるのを手伝いたいと思います。",
       picture: `${Bible}`,
-      alt: "A person holding a Bible with a path in the background."
+      alt: "A person holding a Bible with a path in the background.",
+      link: "/Events"
     },
     {
       cardId: 3,
       heading: "連絡先",
       paragraph:
-        "Please feel free to contact us.  We will try to get back to you as soon as possible.",
+        "ぜひ、自由に連絡してください。なるべく早く折り返しご連絡いたします。",
       picture: `${contactUs}`,
-      alt: "Cell with apps for contacting people."
+      alt: "Cell with apps for contacting people.",
+      link: "/ContactUs"
     },
   ];
   return (
@@ -47,6 +50,7 @@ const Cards = () => {
             paragraph={card.paragraph}
             picture={card.picture}
             alt={card.alt}
+            link={card.link}
           />
         ))}
       </div>
