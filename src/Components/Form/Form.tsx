@@ -2,14 +2,15 @@ import { useState } from "react";
 
 import "../Form/Form.css";
 
-const Form = () => {
+interface Props {
+  request: string;
+}
+const Form:React.FC<Props> = ({request}) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
-
-  const request: string = "メッセージ";
 
   const handleSubmit = (e: any) => {
     e.preventDefault();

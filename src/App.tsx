@@ -6,6 +6,7 @@ import BibleSupport from "./Pages/BibleSupport/BibleSupport";
 import AboutUs from "./Pages/AboutUs/AboutUs";
 import Events from "./Pages/Events/Events";
 import Contact from "./Pages/Contact/Contact";
+import PrayerRequest from "./Pages/PrayerRequest/PrayerRequest";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="AboutUs" element={<AboutUs />} />
           <Route path="Events" element={<Events />} />
           <Route path="ContactUs" element={<Contact />} />
+          <Route path="PrayerRequest" element={<PrayerRequest />} />
         </Routes>
       </BrowserRouter>
     </Fragment>

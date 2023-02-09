@@ -24,7 +24,7 @@ const Contact = () => {
         title={header.title}
         paragraph={header.paragraph}
       />
-      <Form />
+      <Form request="メッセージ" />
       <Footer />
     </>
   );

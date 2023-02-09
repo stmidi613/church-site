@@ -2,6 +2,8 @@ import React from "react";
 
 import Button from "../../../Components/Button";
 
+import { Link } from "react-router-dom";
+
 const Participate = () => {
   return (
     <>
@@ -18,7 +20,9 @@ const Participate = () => {
             <p className="text-sm md:text-xl lg:text-2xl pt-2">
               エペソ人への手紙6章18節
             </p>
-            <Button buttonText="祈りの求め" />
+            <Link to="/PrayerRequest">
+              <Button buttonText="祈りの求め" />
+            </Link>
           </div>
         </div>
       </section>
