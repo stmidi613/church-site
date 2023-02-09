@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import "../Form/Form.css";
 
@@ -8,7 +8,7 @@ const Form = () => {
     email: "",
     message: "",
   });
-  
+
   const request: string = "メッセージ";
 
   const handleSubmit = (e: any) => {
@@ -20,8 +20,11 @@ const Form = () => {
     <>
       <form onSubmit={handleSubmit}>
         <fieldset>
-          <label htmlFor="name">氏名（ニックナームはよろしいです）</label>
+          <label htmlFor="name">
+            氏名（ニックナームはよろしいです）
+          </label>
           <input
+            aria-required
             type="text"
             id="name"
             name="name"
@@ -31,8 +34,11 @@ const Form = () => {
               console.log(setFormData({ ...formData, name: e.target.value }))
             }
           />
-          <label htmlFor="email">電子メール</label>
+          <label htmlFor="email">
+            電子メール
+          </label>
           <input
+            aria-required
             type="email"
             id="email"
             name="email"
@@ -44,6 +50,7 @@ const Form = () => {
           />
           <label htmlFor="message">{request}</label>
           <textarea
+            aria-required
             name="message"
             placeholder="メッセージを書いてください。"
             value={formData.message}
