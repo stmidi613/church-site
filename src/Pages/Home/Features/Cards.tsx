@@ -23,12 +23,12 @@ const Cards = () => {
     },
     {
       cardId: 2,
-      heading: "聖書の学び会",
+      heading: "勉強ガイド・サポート",
       paragraph:
         "一緒に学んだり、成長したり、生きたり、しましょう。キリスト教や聖書に興味がある方のために分かりやすい勉強ガイドがあります。聖書の内容やキリスト教の信仰が分かるのを手伝いたいと思います。",
       picture: `${Bible}`,
       alt: "A person holding a Bible with a path in the background.",
-      link: "/Events"
+      link: "/StudyGuides"
     },
     {
       cardId: 3,
