@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-center">
-        <div className="w-full bg-black static h-[52px] md:h-[116px]"></div>
+        <div className="w-full bg-black static h-[52px] md:h-[140px]"></div>
         {/* regular navbar */}
         <div className="fixed w-full z-10">
           <div className="hidden bg-black text-darkgold w-full text-center text-3xl p-4 md:block">
