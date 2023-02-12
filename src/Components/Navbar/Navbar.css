@@ -1,6 +1,7 @@
 /* full navbar */
 .nav-links li a{
     color: #f1c17a;
+    width: 100%;
   }
 
   .nav-links, .navbar{
@@ -14,6 +15,7 @@
   
   .nav-links{
     align-items: flex-end;
+    width: 100%;
   }
   
   .nav-links li{
@@ -68,6 +70,14 @@
     background-color: #051014;
   }
   
+  #hamburger-container label{
+    padding-bottom: 4px;
+  }
+  
+  #hamburger-container label span{
+    padding: 0 1rem 0 1rem;
+  }
+
   #hamburger{
     opacity: 0;
   }
@@ -75,7 +85,6 @@
   #hamburger:checked + ul .hamburger-item{
     display: block;
     text-align: left;
-    background-color: var(--secondary-color);
     position: relative;
     z-index: 997;
     width: 100vw;
