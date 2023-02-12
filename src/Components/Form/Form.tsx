@@ -38,7 +38,6 @@ const Form: React.FC<Props> = ({ request }) => {
     <>
       <form ref={form} onSubmit={handleSubmit}>
         <fieldset>
-          <input type="hidden" name="contact_number" />
           <label htmlFor="name">氏名（ニックナームはよろしいです）</label>
           <input
             aria-required
