@@ -16,7 +16,7 @@ const Navbar = () => {
           </div>
           <nav className="navbar bg-black p-1">
             <ul className="hidden nav-links md:flex">
-              <li>
+              <li className="">
                 <Link to="/">ホームパージ</Link>
               </li>
               <li>

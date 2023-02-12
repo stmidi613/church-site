@@ -1,9 +1,4 @@
 /* full navbar */
-.nav-links li a{
-    color: #f1c17a;
-    width: 100%;
-  }
-
   .nav-links, .navbar{
     width: 100%;
     justify-content: space-around;
@@ -15,7 +10,6 @@
   
   .nav-links{
     align-items: flex-end;
-    width: 100%;
   }
   
   .nav-links li{
@@ -31,8 +25,11 @@
   }
 
   .nav-links li a{
+    color: #f1c17a;
     font-size: 1.25em;
     text-align: center;
+    display: grid;
+    justify-content: center;
     padding: 12px;
   }
   
