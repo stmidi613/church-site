@@ -59,9 +59,8 @@ const Footer = () => {
           </div>
           <div className="p-4 pb-8 lg:w-1/3 flex flex-wrap justify-around items-center gap-2">
             {icons.map((icon, index) => (
-              <a href={icon.link} target="_blank" rel="noreferrer">
+              <a key={index} href={icon.link} target="_blank" rel="noreferrer">
                 <img
-                  key={index}
                   className="icons transition hover:filter hover:brightness-125 hover:ease-in-out duration-500 w-12 h-12 p-2 hover:bg-gray rounded-md"
                   src={icon.icon}
                   alt={icon.alt}

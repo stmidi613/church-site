@@ -27,13 +27,11 @@ const DetailsSection: React.FC = () => {
     <>
       <section className="lg:flex">
         {aboutUsDetails.map((detail, index) => (
-          <>
-            <Details
-              key={index}
-              detailsTitle={detail.detailsTitle}
-              detailsParagraph={detail.detailsParagraph}
-            />
-          </>
+          <Details
+            key={index}
+            detailsTitle={detail.detailsTitle}
+            detailsParagraph={detail.detailsParagraph}
+          />
         ))}
       </section>
     </>

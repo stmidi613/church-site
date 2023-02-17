@@ -38,15 +38,14 @@ const NextEvents = () => {
         <h2 className="text-3xl pt-8 lg:pb-4">次のエベント</h2>
         <div className="lg:flex w-full">
           {EVENTS.map((event) => (
-            <Fragment>
+            <span key={event.eventId}>
               <SingleEvent
-                key={event.eventId}
                 name={event.name}
                 date={event.date}
                 fullDate={event.fullDate}
               />
               <hr className="lg:hidden border-t-2 border-black mx-[20%] opacity-50"></hr>
-            </Fragment>
+            </span>
           ))}
           <BibleVerse verse={Verse[1]} quote={Verse[0]} home={true} />
         </div>
