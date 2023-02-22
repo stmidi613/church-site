@@ -7,6 +7,7 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 import Events from "./Pages/Events/Events";
 import Contact from "./Pages/Contact/Contact";
 import PrayerRequest from "./Pages/PrayerRequest/PrayerRequest";
+import NoFoundPage from "./Pages/NoFoundPage/NoFoundPage";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="Events" element={<Events />} />
           <Route path="ContactUs" element={<Contact />} />
           <Route path="PrayerRequest" element={<PrayerRequest />} />
+          <Route path="*" element={<NoFoundPage />} />
         </Routes>
       </BrowserRouter>
     </Fragment>

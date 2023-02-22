@@ -17,7 +17,8 @@ module.exports = {
         earthheart: "url('./images/EarthHeart.jpg')",
         handheart: "url('./images/PaintedHands.jpg')",
         contact: "url('./images/contact.jpg')",
-        prayer: "url('./images/prayer.jpg')"
+        prayer: "url('./images/prayer.jpg')",
+        footprints: "url('./images/footprints.jpg')"
       },
     },
   },
