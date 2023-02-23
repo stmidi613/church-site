@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 import SingleEvent from "./SingleEvent";
 import BibleVerse from "../../../Components/BibleVerse";
@@ -38,7 +38,7 @@ const NextEvents = () => {
         <h2 className="text-3xl pt-8 lg:pb-4">次のエベント</h2>
         <div className="lg:flex w-full">
           {EVENTS.map((event) => (
-            <span key={event.eventId}>
+            <span className="lg:w-1/3" key={event.eventId}>
               <SingleEvent
                 name={event.name}
                 date={event.date}

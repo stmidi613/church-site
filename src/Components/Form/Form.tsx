@@ -1,17 +1,36 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useContext } from "react";
+
+import { AppContext } from "../../AppState/AppState";
 
 import emailjs from "@emailjs/browser";
+
 import "../Form/Form.css";
 
 interface Props {
   request: string;
 }
 const Form: React.FC<Props> = ({ request }) => {
+  const { Japanese } = useContext(AppContext);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
+
+  const labels: { name: string; namePlaceholder: string; email: string; message: string; } = Japanese
+    ? {
+        name: "氏名（ニックナームはよろしいです）",
+        namePlaceholder: "本田・勇気",
+        email: "電子メール",
+        message: "メッセージを書いてください",
+      }
+    : { 
+        name: "Full Name (Nickname or Alias)", 
+        namePlaceholder: "John Doe",
+        email: "E-mail",
+        message: "Please write your message here."
+      };
 
   const form: string | any = useRef();
 
@@ -26,7 +45,10 @@ const Form: React.FC<Props> = ({ request }) => {
       )
       .then(
         (result) => {
-          alert(result.text + "! Thank you for contacting us.  We have received your message.");
+          alert(
+            result.text +
+              "! Thank you for contacting us.  We have received your message."
+          );
         },
         (error) => {
           alert(error.text);
@@ -38,25 +60,27 @@ const Form: React.FC<Props> = ({ request }) => {
     <>
       <form ref={form} onSubmit={handleSubmit}>
         <fieldset>
-          <label htmlFor="name">氏名（ニックナームはよろしいです）</label>
+          <label htmlFor="name">{labels.name}</label>
           <input
             aria-required
             type="text"
             id="name"
             name="user-name"
-            placeholder="本田・勇気"
+            placeholder={labels.namePlaceholder}
+            maxLength={50}
             value={formData.name}
             onChange={(e) =>
               console.log(setFormData({ ...formData, name: e.target.value }))
             }
           />
-          <label htmlFor="email">電子メール</label>
+          <label htmlFor="email">{labels.email}</label>
           <input
             aria-required
             type="email"
             id="email"
             name="user_email"
             placeholder="yuukihonda123@gmail.com"
+            maxLength={50}
             value={formData.email}
             onChange={(e) =>
               console.log(setFormData({ ...formData, email: e.target.value }))
@@ -66,7 +90,8 @@ const Form: React.FC<Props> = ({ request }) => {
           <textarea
             aria-required
             name="message"
-            placeholder="メッセージを書いてください。"
+            placeholder={labels.message}
+            maxLength={300}
             value={formData.message}
             onChange={(e) =>
               console.log(setFormData({ ...formData, message: e.target.value }))

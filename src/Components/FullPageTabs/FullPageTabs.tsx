@@ -1,18 +1,36 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { AppContext } from "../../AppState/AppState";
 
 import "./FullPageTabs.css";
 import SingleTab from "./SingleTab";
 import SingleTabContent from "./SingleTabContent";
 
 const FullPageTabs = () => {
+  const { Japanese } = useContext(AppContext);
+
   const [tabNumber, setTabNumber] = useState(0);
 
-  const tabs: { tabName: string; number: number; title: string }[] = [
-    { tabName: "聖書の学び会のアウトライン", number: 0, title: "アウトライン" },
-    { tabName: "聖書の基礎", number: 1, title: "聖書の基礎" },
-    { tabName: "勉強ガイド", number: 2, title: "勉強ガイド" },
-    { tabName: "地図やグラフ", number: 3, title: "地図やグラフ" },
-  ];
+  const tabs: { tabName: string; number: number; title: string }[] = Japanese
+    ? [
+        {
+          tabName: "聖書の学び会のアウトライン",
+          number: 0,
+          title: "アウトライン",
+        },
+        { tabName: "聖書の基礎", number: 1, title: "聖書の基礎" },
+        { tabName: "勉強ガイド", number: 2, title: "勉強ガイド" },
+        { tabName: "地図やグラフ", number: 3, title: "地図やグラフ" },
+      ]
+    : [
+        {
+          tabName: "Bible Study Outlines",
+          number: 0,
+          title: "Outlines",
+        },
+        { tabName: "Bible Basics", number: 1, title: "Bible Basics" },
+        { tabName: "Study Guides", number: 2, title: "Study Guides" },
+        { tabName: "Maps and Graphs", number: 3, title: "Maps and Graphs" },
+      ];
   return (
     <>
       <section>
