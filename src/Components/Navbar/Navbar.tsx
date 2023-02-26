@@ -113,8 +113,7 @@ const Navbar = () => {
           </nav>
         </div>
         <div className="fixed md:hidden bottom-24 right-2 z-10">
-
-        <LanguageButton />
+          <LanguageButton />
         </div>
       </div>
     </>
