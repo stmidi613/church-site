@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import Navbar from "../../../Components/Navbar/Navbar";
+
+import { AppContext } from "../../../AppState/AppState";
 
 import "./Hero.css";
 
 const Hero = () => {
+  const { Japanese } = useContext(AppContext);
+
   return (
     <header
       tabIndex={-1}
@@ -14,7 +18,7 @@ const Hero = () => {
         <Navbar />
         <div className="title-group p-8">
           <h1 className="title text-2xl md:text-5xl">
-            新約聖書クリスチャン教会
+            {Japanese ? "新約聖書クリスチャン教会" : "New Testament Christian Church of Japan"}
           </h1>
         </div>
       </section>

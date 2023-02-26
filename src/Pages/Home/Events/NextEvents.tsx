@@ -1,15 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import SingleEvent from "./SingleEvent";
 import BibleVerse from "../../../Components/BibleVerse";
 
+import { AppContext } from "../../../AppState/AppState";
+
 const NextEvents = () => {
+  const { Japanese } = useContext(AppContext);
+
+  const eventsTitle: string = Japanese ? "次のエベント" : "Next Events";
+
   const EVENTS: {
     eventId: number;
     name: string;
     date: string;
     fullDate: string;
-  }[] = [
+  }[] = 
+  Japanese ? [
     {
       eventId: 1,
       name: "聖書の学び会",
@@ -22,11 +29,28 @@ const NextEvents = () => {
       date: "12月8日",
       fullDate: "2022年12月08日（木曜日）",
     },
+  ] : [
+    {
+      eventId: 1,
+      name: "Bible Study",
+      date: "3/2",
+      fullDate: "Jan 2, 2023 (Thursday)",
+    },
+    {
+      eventId: 2,
+      name: "Bible Study",
+      date: "3/4",
+      fullDate: "Jan 4, 2023 (Thursday)",
+    },
   ];
 
-  const Verse: string[] = [
+  const Verse: string[] = 
+  Japanese ? [
     '"神は, その独り子をお与えになったほどに、世を愛された。独り子を信じる者が一人も滅びないで、永遠の命を得るためである。"',
     "ヨハネ 3:16",
+  ] : [
+    '"For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life."',
+    "John 3:16 KJV",    
   ];
 
   return (
@@ -35,7 +59,7 @@ const NextEvents = () => {
         aria-labelledby="Next-events"
         className="bg-[#f7f6f2] text-center p-6"
       >
-        <h2 className="text-3xl pt-8 lg:pb-4">次のエベント</h2>
+        <h2 className="text-3xl pt-8 lg:pb-4">{eventsTitle}</h2>
         <div className="lg:flex w-full">
           {EVENTS.map((event) => (
             <span className="lg:w-1/3" key={event.eventId}>

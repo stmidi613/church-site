@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import SingleCard from "./SingleCard";
 
@@ -6,12 +6,17 @@ import cross from "../../../images/cross-bg-sm.jpg";
 import Bible from "../../../images/Bible.jpg";
 import contactUs from "../../../images/contact-us.jpg";
 
+import { AppContext } from "../../../AppState/AppState";
+
 const Cards = () => {
+  const { Japanese } = useContext(AppContext);
+  
   const CARDS: [
     { cardId: number; heading: string; paragraph: string; picture: string; alt: string; link: string;},
     { cardId: number; heading: string; paragraph: string; picture: string; alt: string; link: string;},
     { cardId: number; heading: string; paragraph: string; picture: string; alt: string; link: string;}
-  ] = [
+  ] = 
+  Japanese ? [
     {
       cardId: 1,
       heading: "教会の情報",
@@ -39,7 +44,36 @@ const Cards = () => {
       alt: "Cell with apps for contacting people.",
       link: "/ContactUs"
     },
+  ] : [
+    {
+      cardId: 1,
+      heading: "About Us",
+      paragraph:
+        "New Testament Christian Church of Japan is located in Osaka.  Currently we are having Bible studies but in the near future we intend to have services also.  Anyone can participate and we would like to welcome you.",
+      picture: `${cross}`,
+      alt: "A cross with the sun shining behind it.",
+      link: "/AboutUs"
+    },
+    {
+      cardId: 2,
+      heading: "Bible Study Support",
+      paragraph:
+        "Let's learn, live, and grow together in Christ.  We provide study guides and Bible Study outlines to support Bible scholars.  If you are new and just started reading the Bible, the Bible Basics notes will help you get started from zero.",
+      picture: `${Bible}`,
+      alt: "A person holding a Bible with a path in the background.",
+      link: "/StudyGuides"
+    },
+    {
+      cardId: 3,
+      heading: "Contact Us",
+      paragraph:
+        "Please contact us whenever you have time.  We will get back to you as soon as possible.",
+      picture: `${contactUs}`,
+      alt: "Cell with apps for contacting people.",
+      link: "/ContactUs"
+    },
   ];
+
   return (
     <>
       <div className="grid place-content-center md:flex md:justify-around gap-4">

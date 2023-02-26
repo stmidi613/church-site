@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+
 import { Link } from "react-router-dom";
+
+import { AppContext } from "../../../AppState/AppState";
 
 interface Props {
   heading: string;
@@ -16,6 +19,7 @@ const SingleCard: React.FC<Props> = ({
   alt,
   link,
 }) => {
+  const { Japanese } = useContext(AppContext);
   return (
     <div className="pb-6 grid place-content-center w-[300px]">
       <img
@@ -30,7 +34,7 @@ const SingleCard: React.FC<Props> = ({
         <p className="text-center text-sm px-4 pb-8">{paragraph}</p>
         <Link to={link}>
           <button className="transition hover:ease-in-out duration-500 w-full text-center absolute bottom-0 py-6 hover:text-black hover:bg-darkgold">
-            もっと読む &gt;&gt;
+            {Japanese ? "もっと読む" : "Read More"} &gt;&gt;
           </button>
         </Link>
       </div>
