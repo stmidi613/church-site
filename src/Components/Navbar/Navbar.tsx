@@ -21,35 +21,39 @@ const Navbar = () => {
     nav4: string;
     nav5: string;
     nav6: string;
-  } = Japanese ? {
-    title: "新約聖書クリスチャン教会",
-    left: "新約聖書クリ",
-    right: "スチャン教会",
-    nav1: "ホームパージ",
-    nav2: "教会の情報",
-    nav3: "勉強ガイド",
-    nav4: "集会",
-    nav5: "祈り求め",
-    nav6: "連絡先",
-  } : {
-    title: "New Testament Christian Church of Japan",
-    left: "NTCC",
-    right: "of Japan",
-    nav1: "Home",
-    nav2: "About Us",
-    nav3: "Study Guide",
-    nav4: "Events",
-    nav5: "Prayer Requests",
-    nav6: "Contact Us",
-  };
+  } = Japanese
+    ? {
+        title: "新約聖書クリスチャン教会",
+        left: "新約聖書クリ",
+        right: "スチャン教会",
+        nav1: "ホームパージ",
+        nav2: "教会の情報",
+        nav3: "勉強ガイド",
+        nav4: "集会",
+        nav5: "祈り求め",
+        nav6: "連絡先",
+      }
+    : {
+        title: "New Testament Christian Church of Japan",
+        left: "NTCC",
+        right: "of Japan",
+        nav1: "Home",
+        nav2: "About Us",
+        nav3: "Study Guide",
+        nav4: "Events",
+        nav5: "Prayer Requests",
+        nav6: "Contact Us",
+      };
   return (
     <>
       <div className="flex justify-center">
-        <div className="w-full bg-black static h-[52px] md:h-[140px]"></div>
+        <div className="w-full bg-black static h-[52px] md:h-[148px]"></div>
         {/* regular navbar */}
         <div className="fixed w-full z-10">
-          <LanguageButton />
-          <div className="hidden bg-black text-darkgold w-full text-center text-3xl p-4 md:block">
+          <div className="hidden md:block float-right relative right-5 bottom-2">
+            <LanguageButton />
+          </div>
+          <div className="hidden bg-black text-darkgold w-full text-center text-3xl p-5 md:block">
             <h1>{navbar.title}</h1>
           </div>
           <nav className="navbar bg-black p-1">
@@ -76,9 +80,13 @@ const Navbar = () => {
             {/* collapsed navbar */}
             <div id="hamburger-container" className="md:hidden">
               <label htmlFor="hamburger">
-                <span className="pt-3 text-xl text-darkgold">{navbar.left}</span>
+                <span className="pt-3 text-xl text-darkgold">
+                  {navbar.left}
+                </span>
                 &#9776;
-                <span className="pt-3 text-xl text-darkgold">{navbar.right}</span>
+                <span className="pt-3 text-xl text-darkgold">
+                  {navbar.right}
+                </span>
               </label>
               <input type="checkbox" id="hamburger" />
               <ul id="hamburger-background">
@@ -103,6 +111,10 @@ const Navbar = () => {
               </ul>
             </div>
           </nav>
+        </div>
+        <div className="fixed md:hidden bottom-24 right-2 z-10">
+
+        <LanguageButton />
         </div>
       </div>
     </>
