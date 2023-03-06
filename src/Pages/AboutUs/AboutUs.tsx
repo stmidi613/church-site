@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 
 import Navbar from "../../Components/Navbar/Navbar";
 import Header from "../../Components/Header";
@@ -19,13 +19,13 @@ const AboutUs = () => {
           backgroundImage: "bg-earthheart",
           title: "教会の情報",
           paragraph:
-            "私たちは新約聖書クリスチャン教会へみんなを歓迎したいと思います。モットーは「暗く死にゆく世界で、愛する神を分かち合う」です。イエス・キリストの話は愛や恵み、平和や哀れみなどでいっぱいという話です。全世界中、この話をシェアしたいと思います。",
+            "新約聖書クリスチャン教会の牧師スティーブンと申します。よろしくお願いいたします。みんなを歓迎したいと思います。モットーは「暗く死にゆく世界で、愛する神を分かち合う」です。イエス・キリストの話は愛や恵み、平和や哀れみなどでいっぱいという話です。全世界中、この話をシェアしたいと思います。",
         }
       : {
           backgroundImage: "bg-earthheart",
           title: "About Us",
           paragraph:
-            "We would like to welcome everyone to our church.  Our motto is 'Sharing the love of God, to a lost and dying world' because the gospel is about the love of Jesus.  We want to share this story with the world.",
+            "Hello, my name is Steve and I am the pastor of NTCC of Japan.  I would like to welcome everyone to our church.  Our motto is 'Sharing the love of God, to a lost and dying world' because the gospel is about the love of Jesus.  We want to share this story with the world.",
         };
 
   const mainContent: {
@@ -42,7 +42,7 @@ const AboutUs = () => {
   } : {
     detailsTitle: "Find the Joy of the Lord",
     detailsParagraph:
-      "When you have a relationship with God your relationships with others will mean something.  Are you wondering 'Why am I here?' and looking for your purpose in life?  Is there something missing in your life and you can do not know what?  Give God a try.",
+      "When you have a relationship with God your relationships with others will mean something.  Are you wondering 'Why am I here?' and looking for your purpose in life?  Is there something missing in your life but do not know what it is?  Give God a try.",
     quote: '"Blessed are those who hunger and thirst after righteousness, for they shall be filled."',
     verse: "Matthew 5:6",
   };

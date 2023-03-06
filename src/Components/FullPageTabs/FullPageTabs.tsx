@@ -1,9 +1,10 @@
 import React, { useContext, useState } from "react";
 import { AppContext } from "../../AppState/AppState";
 
-import "./FullPageTabs.css";
 import SingleTab from "./SingleTab";
 import SingleTabContent from "./SingleTabContent";
+
+import "./FullPageTabs.css";
 
 const FullPageTabs = () => {
   const { Japanese } = useContext(AppContext);

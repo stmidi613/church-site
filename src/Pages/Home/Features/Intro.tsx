@@ -15,7 +15,7 @@ const Intro = () => {
         }
       : {
           header: "Preaching the love of God, to a lost and dying world",
-          subheader: "Why do we tell others about Jesus and have services.",
+          subheader: "Why do we tell others about Jesus and have services?",
           paragraph:
             "Because God loves the whole world.  We think every life is important so we hold services and show compassion on others to share and show the love of God.",
         };
