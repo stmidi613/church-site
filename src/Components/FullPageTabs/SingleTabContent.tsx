@@ -17,9 +17,22 @@ const SingleTabContent: React.FC<Props> = ({ tabNumber, number, title }) => {
   }[] = [
     {
       id: 1,
-      outlineName: "Report",
-      date: "2023/02/2015",
-      link: require("../../Pages/BibleSupport/PDF/test.pdf"),
+      outlineName: "重い重荷",
+      date: "2023/03/02",
+      link: require("../../Pages/BibleSupport/PDF/heavyburdens2.pdf"),
+    },
+  ];
+  const bibleBasics: {
+    id: number;
+    name: string;
+    date: string;
+    link: string;
+  }[] = [
+    {
+      id: 1,
+      name: "重い重荷",
+      date: "2023/03/02",
+      link: require("../../Pages/BibleSupport/PDF/heavyburdens2.pdf"),
     },
   ];
   return (
@@ -35,6 +48,16 @@ const SingleTabContent: React.FC<Props> = ({ tabNumber, number, title }) => {
               outlineName={outline.outlineName}
               date={outline.date}
               link={outline.link}
+            /> : ""
+          ))}
+          {bibleBasics.map((basic) => (
+            number === 1 ?
+            <SinglePDF
+              key={basic.id}
+              id={basic.id}
+              outlineName={basic.name}
+              date={basic.date}
+              link={basic.link}
             /> : ""
           ))}
         </div>
