@@ -12,7 +12,7 @@ interface Props {
 const SingleTabContent: React.FC<Props> = ({ tabNumber, number, title }) => {
   const {Japanese} = useContext(AppContext)
 
-  const noFile: string = Japanese ? "申し訳ありませんが、只今ファイルがありません。" : "We are sorry but there are no files at this time."
+  const noFile: string = Japanese ? "申し訳ありませんが、ファイルがありません。" : "We are sorry but there are no files at this time."
 
   const outlines: {
     id: number;
