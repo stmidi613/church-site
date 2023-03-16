@@ -7,6 +7,7 @@ module.exports = {
         gold: "#ffeeb3",
         black: "#051014",
         gray: "#817f75",
+        charcoal: "#373F47",
         lightgray: "#f5f5f5",
         teal: "#92dce5",
         darkgold: "#f1c17a",

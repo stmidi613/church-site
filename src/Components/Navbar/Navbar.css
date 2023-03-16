@@ -64,7 +64,7 @@
     font-size: 2rem;
     width: 100vw;
     text-align: center;
-    background-color: #051014;
+    background-color: #373F47;
   }
   
   #hamburger-container label{
@@ -91,7 +91,7 @@
     position: absolute;
     right: 0;
     top: 45px;
-    background-color: #051014;
+    background-color: #373F47;
   }
   
   .top-navbar-item-list:hover .dropdown-content{

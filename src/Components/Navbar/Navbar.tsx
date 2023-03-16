@@ -47,16 +47,16 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-center">
-        <div className="w-full bg-black static h-[52px] md:h-[148px]"></div>
+        <div className="w-full bg-charcoal static h-[52px] md:h-[148px]"></div>
         {/* regular navbar */}
         <div className="fixed w-full z-10">
           <div className="hidden md:block float-right relative right-5 bottom-2">
             <LanguageButton />
           </div>
-          <div className="hidden bg-black text-darkgold w-full text-center text-3xl p-5 md:block">
+          <div className="hidden bg-charcoal text-darkgold w-full text-center text-3xl p-5 md:block">
             <h1>{navbar.title}</h1>
           </div>
-          <nav className="navbar bg-black p-1">
+          <nav className="navbar bg-charcoal p-1">
             <ul className="hidden nav-links md:flex">
               <li className="">
                 <Link to="/">{navbar.nav1}</Link>

@@ -66,7 +66,7 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="grid place-content-center bg-black text-darkgold text-left"
+        className="grid place-content-center bg-charcoal text-darkgold text-left"
         aria-labelledby="footer"
       >
         <div className="grid lg:flex">
