@@ -64,6 +64,18 @@ const SingleTabContent: React.FC<Props> = ({ tabNumber, number, title }) => {
       date: "2023/01/05",
       link: require("../../Pages/BibleSupport/PDF/LambofGod2.pdf"),
     },
+    {
+      id: 6,
+      name: "新約聖書の本1",
+      date: "2023/03/09",
+      link: require("../../Pages/BibleSupport/PDF/NTBooks1.pdf"),
+    },
+    {
+      id: 7,
+      name: "新約聖書の本２",
+      date: "2023/03/16",
+      link: require("../../Pages/BibleSupport/PDF/NTBooks2.pdf"),
+    },
   ];
 
   return (
