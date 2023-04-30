@@ -33,13 +33,13 @@ const NextEvents = () => {
     {
       eventId: 1,
       name: "Fellowship at a Cafe",
-      date: "4/04",
+      date: "5/04",
       fullDate: "May 04, 2023 (Thursday)",
     },
     {
       eventId: 2,
       name: "Bible Study",
-      date: "4/11",
+      date: "5/11",
       fullDate: "May 11, 2023 (Thursday)",
     },
   ];
