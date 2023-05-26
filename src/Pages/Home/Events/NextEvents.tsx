@@ -20,27 +20,27 @@ const NextEvents = () => {
     {
       eventId: 1,
       name: "聖書の学び会",
-      date: "5月18日",
-      fullDate: "2023年05月18日（木曜日）",
+      date: "6月1日",
+      fullDate: "2023年06月1日（木曜日）",
     },
     {
       eventId: 2,
       name: "聖書の学び会",
-      date: "5月25日",
-      fullDate: "2023年05月25日（木曜日）",
+      date: "6月8日",
+      fullDate: "2023年06月08日（木曜日）",
     },
   ] : [
     {
       eventId: 1,
       name: "Bible Study",
-      date: "5/18",
-      fullDate: "May 18, 2023 (Thursday)",
+      date: "6/1",
+      fullDate: "June 1, 2023 (Thursday)",
     },
     {
       eventId: 2,
       name: "Bible Study",
-      date: "5/25",
-      fullDate: "May 25, 2023 (Thursday)",
+      date: "6/8",
+      fullDate: "June 8, 2023 (Thursday)",
     },
   ];
 
