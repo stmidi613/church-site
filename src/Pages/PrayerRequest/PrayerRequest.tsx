@@ -17,7 +17,7 @@ const PrayerRequest = () => {
   } = 
   Japanese ? {
     backgroundImage: "bg-prayer",
-    title: "祈り求め",
+    title: "祈りのリクエスト",
     paragraph:
       "そこで、まず第一に勧める。すべての人のために、王たちと上に立っているすべての人々のために、願いと、祈と、とりなしと、感謝とをささげなさい。テモテへの手紙第一２：１ ",
   } : {

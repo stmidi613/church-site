@@ -11,11 +11,11 @@ const Participate = () => {
   
   const prayerRequest: { header: string; scripture: string; verse: string; button: string; } = 
   Japanese ? {
-    header: "祈りの求め",
+    header: "祈りのリクエスト",
     scripture:
       '“すべての祈りと願いを用いて、どんなときにも御霊によって祈りなさい。そのためには絶えず目をさましていて、すべての聖徒のために、忍耐の限りを尽くし、また祈りなさい。”',
     verse: "エペソ人への手紙6章18節",
-    button: "祈りの求め"
+    button: "祈りのリクエスト"
   } : {
     header: "Prayer Requests",
     scripture:

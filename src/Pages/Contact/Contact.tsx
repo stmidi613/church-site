@@ -35,7 +35,7 @@ const Contact = () => {
         title={header.title}
         paragraph={header.paragraph}
       />
-      <Form request={Japanese ? "メッセージ" : "Message"} />
+      <Form request={Japanese ? "メッセージ・祈りのリクエスト" : "Message or Prayer Request"} />
       <Footer />
     </>
   );

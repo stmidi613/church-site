@@ -20,7 +20,6 @@ const Navbar = () => {
     nav3: string;
     nav4: string;
     nav5: string;
-    nav6: string;
   } = Japanese
     ? {
         title: "新約聖書クリスチャン教会",
@@ -30,8 +29,7 @@ const Navbar = () => {
         nav2: "教会の情報",
         nav3: "勉強ガイド",
         nav4: "集会",
-        nav5: "祈り求め",
-        nav6: "連絡先",
+        nav5: "連絡先",
       }
     : {
         title: "New Testament Christian Church of Japan",
@@ -41,8 +39,7 @@ const Navbar = () => {
         nav2: "About Us",
         nav3: "Study Guide",
         nav4: "Events",
-        nav5: "Prayer Requests",
-        nav6: "Contact Us",
+        nav5: "Contact Us",
       };
   return (
     <>
@@ -71,10 +68,7 @@ const Navbar = () => {
                 <Link to="/Events">{navbar.nav4}</Link>
               </li>
               <li>
-                <Link to="/PrayerRequest">{navbar.nav5}</Link>
-              </li>
-              <li>
-                <Link to="/ContactUs">{navbar.nav6}</Link>
+                <Link to="/ContactUs">{navbar.nav5}</Link>
               </li>
             </ul>
             {/* collapsed navbar */}
@@ -103,10 +97,7 @@ const Navbar = () => {
                   <Link to="/Events">{navbar.nav4}</Link>
                 </li>
                 <li className="hamburger-item">
-                  <Link to="/PrayerRequest">{navbar.nav5}</Link>
-                </li>
-                <li className="hamburger-item">
-                  <Link to="/ContactUs">{navbar.nav6}</Link>
+                  <Link to="/ContactUs">{navbar.nav5}</Link>
                 </li>
               </ul>
             </div>
