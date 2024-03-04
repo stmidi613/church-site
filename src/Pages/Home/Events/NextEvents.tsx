@@ -19,6 +19,7 @@ const NextEvents = () => {
   Japanese ? [
     {
       eventId: 1,
+<<<<<<< HEAD
       name: "聖書の学び会",
       date: "6月29日",
       fullDate: "2023年06月29日（木曜日）",
@@ -28,10 +29,22 @@ const NextEvents = () => {
       name: "聖書の学び会",
       date: "7月6日",
       fullDate: "2023年07月06日（木曜日）",
+=======
+      name: "聖書の学び会：英語",
+      date: "日曜日",
+      fullDate: "毎週の日曜日(午後1時)",
+    },
+    {
+      eventId: 2,
+      name: "聖書の学び会：日本語",
+      date: "木曜日",
+      fullDate: "毎週の木曜日（午後6時）",
+>>>>>>> fix/event-dates
     },
   ] : [
     {
       eventId: 1,
+<<<<<<< HEAD
       name: "Bible Study",
       date: "6/29",
       fullDate: "June 29, 2023 (Thursday)",
@@ -41,6 +54,17 @@ const NextEvents = () => {
       name: "Bible Study",
       date: "7/6",
       fullDate: "July 06, 2023 (Thursday)",
+=======
+      name: "Bible Study: English",
+      date: "Sundays",
+      fullDate: "Every Sunday at 1:00pm",
+    },
+    {
+      eventId: 2,
+      name: "Bible Study: Japanese",
+      date: "Thursdays",
+      fullDate: "Every Thursday at 6:00pm",
+>>>>>>> fix/event-dates
     },
   ];
 
