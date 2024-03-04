@@ -19,28 +19,28 @@ const NextEvents = () => {
   Japanese ? [
     {
       eventId: 1,
-      name: "カフェでの付き合い",
-      date: "5月4日",
-      fullDate: "2023年05月04日（木曜日）",
+      name: "聖書の学び会：英語",
+      date: "日曜日",
+      fullDate: "毎週の日曜日(午後1時)",
     },
     {
       eventId: 2,
-      name: "聖書の学び会",
-      date: "5月11日",
-      fullDate: "2023年05月11日（木曜日）",
+      name: "聖書の学び会：日本語",
+      date: "木曜日",
+      fullDate: "毎週の木曜日（午後6時）",
     },
   ] : [
     {
       eventId: 1,
-      name: "Fellowship at a Cafe",
-      date: "4/04",
-      fullDate: "May 04, 2023 (Thursday)",
+      name: "Bible Study: English",
+      date: "Sundays",
+      fullDate: "Every Sunday at 1:00pm",
     },
     {
       eventId: 2,
-      name: "Bible Study",
-      date: "4/11",
-      fullDate: "May 11, 2023 (Thursday)",
+      name: "Bible Study: Japanese",
+      date: "Thursdays",
+      fullDate: "Every Thursday at 6:00pm",
     },
   ];
 
